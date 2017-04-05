@@ -33,9 +33,9 @@ DescribeDifference(v1,v2)
 DescribeDifference2 <- function(v1,v2) {
   dif <- abs(length(v1) - length(v2))
   if (length(v1) > length(v2)) {
-    return ("v1")
+    return (deparse(substitute((v1))))
   } else {
-    return ("v2")
+    return (deparse(substitute((v2))))
   }
 }
 
